@@ -34,5 +34,5 @@ jobs:
 
       - name: Build and push container image to registry
         run: |
-          docker build . -t docker.io/$IMAGE_NAME:$VERSION
-          docker push docker.io/$IMAGE_NAME:$VERSION
+          docker build . -t  91469/php_bitcot:latest
+          docker push 91469/php_bitcot:latest
