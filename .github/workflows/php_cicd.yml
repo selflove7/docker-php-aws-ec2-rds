@@ -38,3 +38,12 @@ jobs:
       
       - name: Push Docker image  
         run: docker push 91469/php_bitcot:latest
+
+  deploy:
+    runs-on: self-hosted # This will target your self-hosted runner
+    needs: build
+    
+    steps:
+      - name: Execute the ssh script 
+        run: |
+          bash /home/php.sh
