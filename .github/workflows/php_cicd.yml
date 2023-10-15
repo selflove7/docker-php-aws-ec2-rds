@@ -10,10 +10,6 @@ on:
       - 'php-web-app/**'
   workflow_dispatch:
 
-env:
-  IMAGE_NAME: php_bitcot
-  VERSION: latest
-
 jobs:
 
   build:
