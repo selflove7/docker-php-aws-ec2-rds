@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Execute the ssh script 
         run: |
-          bash /home/php.sh
+          bash /home/ubuntu/php.sh
